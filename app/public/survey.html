@@ -18,7 +18,7 @@
         </p>
         <ul>
             <li>
-                <p></p>
+                <p>I lead an active lifestyle.</p>
                 <label for="q1">1</label>
                 <input type="radio" name = "q1" value = 1>
                 <label for="q1">2</label>
@@ -31,7 +31,7 @@
                 <input type="radio" name = "q1" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>My religion is important to me.</p>
                 <label for="q2">1</label>
                 <input type="radio" name = "q2" value = 1>
                 <label for="q2">2</label>
@@ -44,7 +44,7 @@
                 <input type="radio" name = "q2" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I am an avid reader.</p>
                 <label for="q3">1</label>
                 <input type="radio" name = "q3" value = 1>
                 <label for="q3">2</label>
@@ -57,7 +57,7 @@
                 <input type="radio" name = "q3" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I am an extrovert.</p>
                 <label for="q4">1</label>
                 <input type="radio" name = "q4" value = 1>
                 <label for="q4">2</label>
@@ -70,7 +70,7 @@
                 <input type="radio" name = "q4" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I don't need a lot of money to be happy.</p>
                 <label for="q5">1</label>
                 <input type="radio" name = "q5" value = 1>
                 <label for="q5">2</label>
@@ -83,7 +83,7 @@
                 <input type="radio" name = "q5" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I feel an obligation to help those less fortunate than myself.</p>
                 <label for="q6">1</label>
                 <input type="radio" name = "q6" value = 1>
                 <label for="q6">2</label>
@@ -96,7 +96,7 @@
                 <input type="radio" name = "q6" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>If a friend fell on hard times, I would let them crash at my place for however long they needed.</p>
                 <label for="q7">1</label>
                 <input type="radio" name = "q7" value = 1>
                 <label for="q7">2</label>
@@ -109,7 +109,7 @@
                 <input type="radio" name = "q7" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>All else being equal, I would choose to live in a major city.</p>
                 <label for=q8>1</label>
                 <input type="radio" name = "q8" value = 1>
                 <label for=q8>2</label>
@@ -122,7 +122,7 @@
                 <input type="radio" name = "q8" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I like to drink in social situations.</p>
                 <label for=q9>1</label>
                 <input type="radio" name = "q9" value = 1>
                 <label for=q9>2</label>
@@ -135,7 +135,7 @@
                 <input type="radio" name = "q9" value = 5>
             </li>
             <li>
-                <p></p>
+                <p>I like dinosaurs.</p>
                 <label for=q10>1</label>
                 <input type="radio" name = "q10" value = 1>
                 <label for=q10>2</label>
@@ -162,12 +162,11 @@
                 name: $("#fullName").val(),
                 scores: userScores
             };
-            console.log(newProfile);
             $.ajax("/api/friends", {
                 type: "POST",
                 data: newProfile
             }).then(response => {
-                console.log(response);
+                alert("Your closest match is: " + response.name);
             });
         });
     </script>
