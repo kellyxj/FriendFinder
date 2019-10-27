@@ -1,11 +1,13 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "engines": {
-    "node": "10.16.0"
-  },
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -14,14 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/kellyxj/FriendFinder.git"
   },
-  "author": "Kelly Jiang",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kellyxj/FriendFinder/issues"
   },
-  "homepage": "https://github.com/kellyxj/FriendFinder#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/kellyxj/FriendFinder#readme"
 }
