@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://code.jquery.com/jquery-3.4.1.js'
+    integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU='
+    crossorigin='anonymous'></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="/api/friends" method = "post">
+    <form onsubmit = "return false" id = "survey">
+        <label for="name">Enter your full name:</label>
+        <input type="text" id = "fullName">
         <p>Choose how much you agree with each of the following statements, where 1 is strongly disagree,
             and 5 is strongly agree.
         </p>
@@ -15,137 +20,156 @@
             <li>
                 <p></p>
                 <label for="q1">1</label>
-                <input type="radio" name = "q1">
+                <input type="radio" name = "q1" value = 1>
                 <label for="q1">2</label>
-                <input type="radio" name = "q1">
+                <input type="radio" name = "q1" value = 2>
                 <label for="q1">3</label>
-                <input type="radio" name = "q1">
+                <input type="radio" name = "q1" value = 3>
                 <label for="q1">4</label>
-                <input type="radio" name = "q1">
+                <input type="radio" name = "q1" value = 4>
                 <label for="q1">5</label>
-                <input type="radio" name = "q1">
+                <input type="radio" name = "q1" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q2">1</label>
-                <input type="radio" name = "q2">
+                <input type="radio" name = "q2" value = 1>
                 <label for="q2">2</label>
-                <input type="radio" name = "q2">
+                <input type="radio" name = "q2" value = 2>
                 <label for="q2">3</label>
-                <input type="radio" name = "q2">
+                <input type="radio" name = "q2" value = 3>
                 <label for="q2">4</label>
-                <input type="radio" name = "q2">
+                <input type="radio" name = "q2" value = 4>
                 <label for="q2">5</label>
-                <input type="radio" name = "q2">
+                <input type="radio" name = "q2" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q3">1</label>
-                <input type="radio" name = "q3">
+                <input type="radio" name = "q3" value = 1>
                 <label for="q3">2</label>
-                <input type="radio" name = "q3">
+                <input type="radio" name = "q3" value = 2>
                 <label for="q3">3</label>
-                <input type="radio" name = "q3">
+                <input type="radio" name = "q3" value = 3>
                 <label for="q3">4</label>
-                <input type="radio" name = "q3">
+                <input type="radio" name = "q3" value = 4>
                 <label for="q3">5</label>
-                <input type="radio" name = "q3">
+                <input type="radio" name = "q3" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q4">1</label>
-                <input type="radio" name = "q4">
+                <input type="radio" name = "q4" value = 1>
                 <label for="q4">2</label>
-                <input type="radio" name = "q4">
+                <input type="radio" name = "q4" value = 2>
                 <label for="q4">3</label>
-                <input type="radio" name = "q4">
+                <input type="radio" name = "q4" value = 3>
                 <label for="q4">4</label>
-                <input type="radio" name = "q4">
+                <input type="radio" name = "q4" value = 4>
                 <label for="q4">5</label>
-                <input type="radio" name = "q4">
+                <input type="radio" name = "q4" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q5">1</label>
-                <input type="radio" name = "q5">
+                <input type="radio" name = "q5" value = 1>
                 <label for="q5">2</label>
-                <input type="radio" name = "q5">
+                <input type="radio" name = "q5" value = 2>
                 <label for="q5">3</label>
-                <input type="radio" name = "q5">
+                <input type="radio" name = "q5" value = 3>
                 <label for="q5">4</label>
-                <input type="radio" name = "q5">
+                <input type="radio" name = "q5" value = 4>
                 <label for="q5">5</label>
-                <input type="radio" name = "q5">
+                <input type="radio" name = "q5" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q6">1</label>
-                <input type="radio" name = "q6">
+                <input type="radio" name = "q6" value = 1>
                 <label for="q6">2</label>
-                <input type="radio" name = "q6">
+                <input type="radio" name = "q6" value = 2>
                 <label for="q6">3</label>
-                <input type="radio" name = "q6">
+                <input type="radio" name = "q6" value = 3>
                 <label for="q6">4</label>
-                <input type="radio" name = "q6">
+                <input type="radio" name = "q6" value = 4>
                 <label for="q6">5</label>
-                <input type="radio" name = "q6">
+                <input type="radio" name = "q6" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for="q7">1</label>
-                <input type="radio" name = "q7">
+                <input type="radio" name = "q7" value = 1>
                 <label for="q7">2</label>
-                <input type="radio" name = "q7">
+                <input type="radio" name = "q7" value = 2>
                 <label for="q7">3</label>
-                <input type="radio" name = "q7">
+                <input type="radio" name = "q7" value = 3>
                 <label for="q7">4</label>
-                <input type="radio" name = "q7">
+                <input type="radio" name = "q7" value = 4>
                 <label for="q7">5</label>
-                <input type="radio" name = "q7">
+                <input type="radio" name = "q7" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for=q8>1</label>
-                <input type="radio" name = "q8">
+                <input type="radio" name = "q8" value = 1>
                 <label for=q8>2</label>
-                <input type="radio" name = "q8">
+                <input type="radio" name = "q8" value = 2>
                 <label for=q8>3</label>
-                <input type="radio" name = "q8">
+                <input type="radio" name = "q8" value = 3>
                 <label for=q8>4</label>
-                <input type="radio" name = "q8">
+                <input type="radio" name = "q8" value = 4>
                 <label for=q8>5</label>
-                <input type="radio" name = "q8">
+                <input type="radio" name = "q8" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for=q9>1</label>
-                <input type="radio" name = "q9">
+                <input type="radio" name = "q9" value = 1>
                 <label for=q9>2</label>
-                <input type="radio" name = "q9">
+                <input type="radio" name = "q9" value = 2>
                 <label for=q9>3</label>
-                <input type="radio" name = "q9">
+                <input type="radio" name = "q9" value = 3>
                 <label for=q9>4</label>
-                <input type="radio" name = "q9">
+                <input type="radio" name = "q9" value = 4>
                 <label for=q9>5</label>
-                <input type="radio" name = "q9">
+                <input type="radio" name = "q9" value = 5>
             </li>
             <li>
                 <p></p>
                 <label for=q10>1</label>
-                <input type="radio" name = "q10">
+                <input type="radio" name = "q10" value = 1>
                 <label for=q10>2</label>
-                <input type="radio" name = "q10">
+                <input type="radio" name = "q10" value = 2>
                 <label for=q10>3</label>
-                <input type="radio" name = "q10">
+                <input type="radio" name = "q10" value = 3>
                 <label for=q10>4</label>
-                <input type="radio" name = "q10">
+                <input type="radio" name = "q10" value = 4>
                 <label for=q10>5</label>
-                <input type="radio" name = "q10">
+                <input type="radio" name = "q10" value = 5>
             </li>
         </ul>
+        <input type="submit" id = "submit">
     </form>
     <script type = "text/javascript">
-        
+        $("#submit").on("click", (event) => {
+            event.preventDefault();
+            const userScores = [];
+            for(i = 0; i < 10; i++) 
+            {
+                userScores.push(parseInt($("input[type = radio]:checked").eq(i).val()));
+            }
+            const newProfile = {
+                name: $("#fullName").val(),
+                scores: userScores
+            };
+            console.log(newProfile);
+            $.ajax("/api/friends", {
+                type: "POST",
+                data: newProfile
+            }).then(response => {
+                console.log(response);
+            });
+        });
     </script>
 </body>
 </html>
